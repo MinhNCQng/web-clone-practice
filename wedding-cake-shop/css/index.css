@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'PrimaryFont';
+    src: url('../fonts/file.woff2');
+}
+
+@font-face {
+    font-family: 'SecondaryFont';
+    src: url('../fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue-color: blue;
+    --font_2: normal normal normal 46px/1.4em wfont_f61af8_1b7afc90f48a4aae9bd20dacdb863439,wf_1b7afc90f48a4aae9bd20dacd,orig_didot;
+    --color-15: 41,35,37;
+    --font_5: normal normal normal 24px/1.4em wfont_f61af8_1b7afc90f48a4aae9bd20dacdb863439,wf_1b7afc90f48a4aae9bd20dacd,orig_didot;
+    --color_20: 64,54,55;
+    --color-white: 255 ,255,255;
+    --color_18: 211,179,184;
+    --fnt: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font_8: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --font-3: normal normal normal 46px/1.4em wfont_f61af8_1b7afc90f48a4aae9bd20dacdb863439,wf_1b7afc90f48a4aae9bd20dacd,orig_didot
+}
+html {
+    font-size: 16px;
+    
+}
+
+body {
+    /* height: 100vh; */
+    /* background-color: red; */
+    overflow-x: hidden;
+    min-width: 1200px;
+}
+.body-container {
+    margin: 126px 80px;
+    background-color: #ffffff;
+    height: 100%;
+    margin-bottom: 105px;
+    
+    
+
+}
+
+
+
+/* header */
+
+.header{
+    position: fixed;
+    margin: 0 80px;
+    z-index: 1000;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px ;
+    justify-content: space-between;
+    background-color: white;
+}
+.header-info{
+    align-items: center;
+    display: flex;
+}
+.header-logo{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #D3B3B8;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.header-logo:hover{
+    background-color: #292325;
+}
+
+.header-logo span {
+    font: var(--fnt,var(--font_5));
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    display: block;
+    font-size: 2.6rem;
+}
+
+.header-company-name{
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    
+}
+
+.header-company-name span {
+    padding-top: 16px;
+    padding-left:26px ;
+    color: black;
+    text-align: left;
+    
+    display: block;
+    font-size: 1rem;
+    font-family: 'SecondaryFont';
+}
+
+
+.header-nav-container{
+    width: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: -10px
+}
+.header-nav a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.4s;
+    font-family: 'SecondaryFont';
+}
+
+.header-nav a:hover{
+    color:#D3B3B8;
+}
+
+.social{
+    margin-right: 20px;
+}
+.fab{
+    font-size: 18.5px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+
+
+.footer{
+    background-color: #292325;
+    color: white;
+    text-align: center;
+    line-height: 67px;
+    /* margin-bottom: 72px; */
+    font-size: 0.87rem;
+    font-family: 'SecondaryFont';
+}
+
+
+
+/* floating chat */
+
+input#floating-bar:checked ~ .chatting{
+    width: 342px;
+} 
+input#floating-bar:checked ~ .chatting .chat-bar-collapse {
+    display: none;
+} 
+input#floating-bar:checked ~ .chatting .floating-chat-bar-clicked,
+input#floating-bar:checked ~ .chatting .fa-times,
+input#floating-bar:checked ~ .chatting .floating-chat-box-wrapper
+{
+    display: block;
+} 
+.floating-chat-box-wrapper{
+    display: none;
+}
+.floating-chat{
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    right: 20px;
+    /* height: 73px; */
+    /* background-color: white; */
+}
+
+.floating-chat-bar{
+    width: 100%;
+    text-align: center;
+    /* height: 55px; */
+    border-radius:  7px 7px 0 0;
+    background-color: #998184;
+    color: white;
+    position: relative;
+    padding: 17px 0px;
+    font-size: 1.2rem;
+    letter-spacing: 0.7px;
+    display: block;
+}
+.floating-chat-bar .fa-times{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+.floating-chat-bar-clicked{
+    text-align: left;
+    display: none;
+}
+.bar-clicked-title{
+    font-size: 1.3rem;
+    padding-top: 4px;
+    padding-left: 20px;
+}
+.bar-clicked-subtitle{
+    font-size: 0.85rem;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-bottom: 2px;
+    position: relative;
+    font-family: 'SecondaryFont';
+    letter-spacing: 0.1px;
+}
+.bar-clicked-subtitle::before{
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 22px;
+    border: 4px solid rgb(32, 212, 62);
+    border-radius: 50%;
+}
+.hide{
+    display: none;
+}
+.chatting {
+    /* width: 342px; */
+    width: 200px;
+}
+
+.chat-box-container{
+    height: 460px;
+    width: 100%;
+    background-color: #F5F2F2;
+
+}
+.texting-container{
+    height: 65px;
+    width: 100%;
+    background-color: white;
+}
+.writing-area{
+    resize: none;
+    width: 80%;
+    padding-right: 20px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 1rem;
+    
+    
+}
+.texting-container{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.texting-container textarea{
+    text-align: start;
+    
+}
+.icon-and-attach > .fas ,.icon-and-attach > .far {
+    margin-left: 10px;
+    color: rgba(0,  0, 0, 0.4);
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.icon-and-attach > .fas:hover ,.icon-and-attach > .far:hover {
+    margin-left: 10px;
+    color: rgba(0,  0, 0, 1);
+}
+.icon-and-attach{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+@keyframes fadeInBright {
+    0% {
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0.5;
+        filter: brightness(1.2);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+@keyframes fadeOutBright {
+    0% {
+        opacity: 1;
+        
+    }
+    50%{
+        opacity: 0.5;
+        filter: brightness(1.2);
+    }
+    to {
+        opacity: 0;
+        filter: brightness(1);
+    }
+    
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,517 @@
+
+
+
+.cake-heading-grid{
+    width: 100%;
+    
+    display: grid ;
+
+    grid-row-gap: 25px ;
+    grid-column-gap: 40px;
+    grid-template-columns: 31.5% 31.5% 37% ;
+    overflow-x: hidden;
+}
+/* Define colum grid line start - end */
+.grid-col-line-start-1{
+    grid-column-start: 1;
+}
+.grid-col-line-start-2{
+    grid-column-start: 2;
+}
+.grid-col-line-start-3{
+    grid-column-start: 3;
+}
+
+
+.grid-col-line-end-1{
+    grid-column-end: 1;
+}
+
+.grid-col-line-end-2{
+    grid-column-end: 2;
+}
+
+.grid-col-line-end-3{
+    grid-column-end: 3;
+}
+.grid-col-line-end-4{
+    grid-column-end: 4;
+}
+
+.margin-right-40px{
+    margin-right: 40px;
+}
+.image-full-center{
+    width: 1743px;
+    object-fit: cover;
+    object-position: center;
+    
+
+}
+
+
+/* define fex-col and flex-row */
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center {
+    align-items: center;
+
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+
+.image-cake-heading{
+    width: 100%;
+    padding-right: 80px;
+}
+.heading-image-cake{
+    height: 600px;
+    width: 100%;
+    object-position: top left;
+    object-fit: cover;
+    
+}
+
+.cake-intro{
+    background-color: #F7EBED;
+    height: 560px;
+    text-align: left;
+
+    
+}
+
+.cake-intro-image img{
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.cake-intro-wrapper{
+    margin-left: -80px;
+    margin-top: -30px;
+    width: 400px;
+}
+
+.cake-intro-wrapper > h2{
+    font: var(--font-3);
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgb(var(--color-15));
+    padding-bottom: 42px;
+    padding-top: 60px;
+    line-height: 60px;
+    font-family: 'PrimaryFont';
+}
+.cake-intro-wrapper > p{
+    width: 500px;
+    font: var(--font_8);
+    line-height: 1.7em;
+    font-size: 0.9rem;
+    color: rgb(var(--color_20));
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+
+.card-image{
+    position: relative;
+    height: 615px;
+    overflow-y: hidden;
+    
+
+    /* width: max-content; */
+    
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card-image .card-image-order-button{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font: var(--fnt,var(--font_5));
+    padding: 15px 55px;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    font-family: 'SecondaryFont';
+}
+
+
+.cake-collection-title{
+    height: 200px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 200px;
+    color:rgb(var(--color_15));
+    font-size:36px;
+    font-weight: 100;
+    font-family: 'PrimaryFont';
+}
+
+/* instagram */
+.instagram-container{
+    margin: 0 auto;
+}
+.cake-instagram-title{
+    text-align: center;
+    padding-top: 150px ;
+    font-size: 36px;
+    font-weight: 100;
+    padding-bottom: 15px;
+    font-family: 'PrimaryFont';
+    
+}
+
+.grid-layout-instagram{
+    width: 651px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-auto-rows: 217px;
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.instagram-item{
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.instagram-item-text{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease 0.4s ;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.instagram-item p {
+    opacity: 0;
+    transition: all ease 0.2s ;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+
+.instagram-item-text:hover {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.instagram-item-text:hover p{
+    opacity: 1;
+    color: white;
+}
+
+.load-more-button{
+    
+}
+
+/* button */
+
+.button{
+    text-align: center;
+    
+    font: var(--fnt,var(--font_5));
+    padding: 15px 50px;
+    background-color: white;
+    outline: none;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: ease 0.4s;
+    margin: 60px auto;
+    display: block;
+    font-family: 'SecondaryFont';
+
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+.text-color-pink{
+    color: rgb(var(--color_18));
+}
+
+
+
+
+
+/* carousel */
+
+
+.carousel-container{
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    
+}
+.carousel-slide .carousel-image{
+    width: 100%;
+    
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.carousel-slide .carousel-image:hover{
+    filter: opacity(0.5);
+    
+}
+
+
+.carousel-image-wrapper{
+    width: 365px;
+    margin-right: 27px;
+    background-color: #F7EBED;
+    cursor: pointer;
+}
+
+
+.carousel-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3000;
+    animation: fadeIn 0.4s linear;
+    
+}
+
+.carousel-modal .fas{
+    font-weight: 100;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carousel-modal .fa-compress-alt{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    
+}
+
+.carousel-modal .fa-expand-alt{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.carousel-modal .fa-times{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.carousel-modal .fa-chevron-left{
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    
+    
+}
+
+.carousel-modal .fa-chevron-right{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    
+}
+.carousel-model-image{
+    width: 540px;
+    height: 575px;
+    transform: translateY(-13.5%);
+    position: relative;
+}
+
+.carousel-model-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    
+}
+.image-infomation{
+    position: fixed;
+    bottom: 10%;
+    text-align: center;
+}
+
+.image-infomation .image-title {
+    font-family:  'PrimaryFont';
+    font-weight: 1;
+    font-size: 1.5rem;
+    
+
+}
+.image-infomation .image-description{
+    font-family:'SecondaryFont';
+    font-weight: 1;
+    padding-top: 20px;
+    font-size: 1rem;
+
+}
+
+
+/* cake model */
+
+.detail-cake-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,  0, 0, 0.5);
+    z-index: 2000;
+    
+    
+    
+}
+
+.detail-cake-modal .fa-times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.detail-cake-container{
+    width: 886px;
+    height: 510px;
+    background-color: white;
+    position: relative;
+}
+
+.detail-cake-container .fas{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    font-weight: lighter;
+    z-index: 3000;
+    cursor: pointer;
+}
+
+
+
+.detail-cake-container .fas.fa-chevron-left{
+    top:50%;
+    left: -100px;
+    transform: translateY(-50%);
+}
+
+.detail-cake-container .fas.fa-chevron-right{
+    top:50%;
+    right: -100px;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.detail-cake-image{
+    width: 57%;
+}
+.detail-cake-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.detail-cake-info{
+    width: 43%;
+}
+
+
+.cake-info-header{
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.cake-info-header-name-and-day{
+    padding-left: 10px;
+    text-align: left;
+    flex-grow: 1;
+    font-family: 'SecondaryFont';
+    font-size: 0.9rem;
+
+}
+.cake-info-header-avatar{
+    --avatar-size: 35px;
+    text-align: center;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    background-color: rgb(216,216,216);
+    line-height: var(--avatar-size);
+
+    
+}
+.cake-info-header-social{
+    opacity: 0.4;
+}
+
+.cake-info-header{
+    border-bottom: 1px solid rgba(0,  0, 0, 0.1);
+}
+
+.cake-info-tags{
+    padding: 25px;
+    line-height: 25px;
+    font-size: 0.9rem;
+    color: rgba(0,  0, 0, 0.4);
+    flex-grow: 1;
+}
+
+.cake-info-footer{
+    height: 53px;
+    border-top: 1px solid rgba(0,  0, 0, 0.1);
+}

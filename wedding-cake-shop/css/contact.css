@@ -1,0 +1,134 @@
+.contact-container{
+    height: 940px;
+    background-color: #F7EBED;
+}
+
+.contact-header{
+    text-align: center;
+    padding: 70px 30% 0 30%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-header > h1{
+    font-family: 'PrimaryFont';
+    font-weight: 100;
+
+}
+
+.contact-header p {
+    font-size: 1rem;
+    padding: 0 5%;
+    padding-top: 15px;
+    line-height: 28px;
+    font-family: 'SecondaryFont';
+    font-weight: 100;
+}
+
+.contact-header .more-contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 1.05rem;
+    width:500px;
+    font-family: 'SecondaryFont';
+}
+.more-contact-info ~ h3, .more-contact-info ~ h4{
+    font-family: 'SecondaryFont';
+    font-weight: 100;
+}
+
+.separator {
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+
+.contact-header h4{
+    font-size: 0.85rem;
+    margin-top: 15px;
+
+}
+
+.contact-header h3{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.contact-card{
+    margin-top: 60px;
+    height: 482px;
+    font-family: 'PrimaryFont';
+    
+    
+}
+
+.contact-card-field{
+    margin: 0 auto;
+    width: 855px;
+    height: 100%;
+    background-color: white;
+    padding: 50px 130px;
+    
+
+}
+
+::placeholder{
+    font-family: 'SecondaryFont';
+    
+}
+.contact-card-field table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.name-phone-field td input{
+    width: 96%;
+    height: 42px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0,0.6);
+    
+}
+
+.phone-field td input {
+    width: 200%;
+    height: 42px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0,0.6);
+}
+
+
+.message-field  td textarea{
+    padding-top: 10px;
+    width: 200%;
+    height: 157px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0,0.6);
+    resize: none;
+}
+
+.submit-button-field td  button {
+    width: 200%;
+    height: 42px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 0.95rem;
+    resize: none;
+    background-color: unset;
+    transform: translateY(-25px);
+    cursor: pointer;
+    font-family: "SecondaryFont";
+}
